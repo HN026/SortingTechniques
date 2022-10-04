@@ -23,12 +23,12 @@ void Bubble(int A[], int n)
                 flags = 1;
             }
         }
-        if(flags==0)
+
+        if (flags == 0)
         {
             break;
         }
-
-    }
+        }
 }
 
 int main()
@@ -40,7 +40,6 @@ int main()
     {
         cout << A[i] << " ";
     }
-    
 
     return 0;
 }
