@@ -28,7 +28,7 @@ void Bubble(int A[], int n)
         {
             break;
         }
-        }
+    }
 }
 
 int main()
@@ -40,6 +40,5 @@ int main()
     {
         cout << A[i] << " ";
     }
-
     return 0;
 }
