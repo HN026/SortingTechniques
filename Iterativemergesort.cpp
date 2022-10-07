@@ -26,7 +26,7 @@ void Merge( int A[], int l, int mid, int h)
         B[k++] = A[j];
     }
 
-    for(int i=l;i<=h;i++)
+    for(i=l;i<=h;i++)
     {
         A[i] = B[i];
     }
@@ -39,7 +39,7 @@ void IMergeSort( int A[], int n)
     
     for(p = 2; p<=n; p = p*2)
     {
-        for(i=0; i+p-1; i = i+p)
+        for(i=0; i+p-1<n; i = i+p)
         {
             l = i;
             h = i+p-1;
@@ -61,11 +61,6 @@ void IMergeSort( int A[], int n)
     }
 
 }
-
-
-
-
-
 int main()
 {
     int A[] = {11,13,7,12,16,9,24,5,10,3};
