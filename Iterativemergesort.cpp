@@ -2,6 +2,8 @@
 
 using namespace std;
 
+// Iterative code for Merge sort
+
 void Merge( int A[], int l, int mid, int h)
 {
     int i = l,j=mid+1,k=l;
