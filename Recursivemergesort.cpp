@@ -4,7 +4,6 @@ using namespace std;
 
 // As this method is recursive in nature, it will be using a stack, total space complexity in this method will be 2n + logn & n + logn is the extra space that is required by the recursive merge sort algorithm.
 
-
 void Merge( int A[], int l, int mid, int h)
 {
     int i = l,j=mid+1,k=l;
@@ -35,7 +34,6 @@ void Merge( int A[], int l, int mid, int h)
     }
 }
 
-
 void RMergeSort(int A[], int l, int h)
 {
     int mid;
@@ -54,11 +52,12 @@ int main()
     int A[] = {11, 13, 7, 2, 6, 9, 4, 5, 10, 3};
     int n = sizeof(A) / sizeof(int);
 
-    RMergeSort(A,0, n-1);
+    RMergeSort(A,0,n-1);
 
     for(int i = 0; i<n; i++)
     {
         cout<<A[i]<<" ";
     }
+
     return 0;
 }
